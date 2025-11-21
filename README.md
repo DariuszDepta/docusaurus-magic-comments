@@ -1,6 +1,6 @@
 # Docusaurus magic comments
 
-**Helper library for applying Docusaurus magic comments to diff files**
+**Tool for applying Docusaurus custom magic comments to diff files**
 
 ## Problem
 
