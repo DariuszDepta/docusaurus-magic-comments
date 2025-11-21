@@ -22,3 +22,20 @@ For example, suppose your `diff` tool produces the following output:
 +     entry_point, to_json_binary, Binary, Deps, DepsMut, Env, MessageInfo, Response, StdResult,
 + };
 ```
+
+Now, when you paste it do Markdown file in Docusaurus, like this:
+
+````md
+```rust
+  use crate::{
+      error::ContractError,
+-     msg::{ExecuteMsg, InstantiateMsg},
++     msg::{ExecuteMsg, InstantiateMsg, QueryMsg, ResolveRecordResponse},
+      state::{NameRecord, NAME_RESOLVER},
+  };
+- use cosmwasm_std::{entry_point, DepsMut, Env, MessageInfo, Response};
++ use cosmwasm_std::{
++     entry_point, to_json_binary, Binary, Deps, DepsMut, Env, MessageInfo, Response, StdResult,
++ };
+```
+````
